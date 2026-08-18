@@ -16,6 +16,7 @@ build/
 *.obj
 *.lib
 *.pdb
+*.ilk
 
 # CMake
 CMakeFiles/
