@@ -1,5 +1,8 @@
 # bhushan.rc@gmail.com
 # Visual Studio
+.vscode/
+*.json
+
 .vs/
 *.user
 *.suo
