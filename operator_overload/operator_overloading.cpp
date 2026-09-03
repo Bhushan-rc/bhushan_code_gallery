@@ -1,5 +1,12 @@
 #include<iostream>
 
+/*
+    \author:    Bhushan R Chaudhari
+    \date:      15/09/2024
+    \brief:     this is a program for operator overloading which is easy to 
+                understand while reading program or its output
+*/
+
 class TestClass {
 
     private:
@@ -126,30 +133,35 @@ int main() {
     TestClass obj1(1, 2, 3), obj2;
     std::cout<< "\n\t in obj1";
     std::cout<< obj1;
+    getchar();
 
     std::cout << "\n =========================================================";
     std::cout<< "\n overloading operator = ";
     obj2 = obj1;
     std::cout<< "\n\t in obj2";
     std::cout<< obj2;
+    getchar();
 
     std::cout << "\n =========================================================";
     std::cout<< "\n overloading operator + ";
     TestClass obj3 = obj1 + obj2;
     std::cout<< "\n\t in obj3";
     std::cout<< obj3;
+    getchar();
 
     std::cout << "\n =========================================================";
     std::cout<< "\n overloading operator pre ++ ";
     ++obj3;
     std::cout<< "\n\t in obj3";
     std::cout<< obj3;
+    getchar();
 
     std::cout << "\n =========================================================";
     std::cout<< "\n overloading operator post ++ ";
     TestClass obj4 = obj3++;
     std::cout<< "\n\t in obj4";
     std::cout<< obj4;
+    getchar();
 
     std::cout << "\n =========================================================";
     std::cout<< "\n overloading operator == ";
@@ -158,15 +170,18 @@ int main() {
     std::cout<< obj1;
     std::cout<< "\t in obj2";
     std::cout<< obj2;
+    getchar();
     
     std::cout << "\n =========================================================";
     std::cout<< "\n overloading operator new[] ";
     TestClass *ptr = new TestClass[5];
     TestClass obj = *ptr;
+    getchar();
 
     std::cout << "\n\n =========================================================";
     std::cout<< "\n functor : overloading operator () ";
     obj(5);
+    getchar();
     
     std::cout << "\n\n =========================================================";
     std::cout<< "\n overloading operator [] ";
@@ -174,16 +189,19 @@ int main() {
         
         std::cout<<"\n\t reading obj[" << i << "] : " << obj[i] << " ";
     }
+    getchar();
     
     std::cout << "\n\n =========================================================";
     std::cout<< "\n overloading operator delete[] ";
     delete []ptr;
+    getchar();
  
     std::cout << "\n =========================================================";
     std::cout << "\n overloading operator >> ";
     std::cin >> obj;
     std::cout << "\n\t in obj";
     std::cout << obj;
+    getchar();
     
     std::cout << "\n\n =========================================================";
     std::cout<< "\n Operators that can be overloaded"
@@ -198,6 +216,7 @@ int main() {
             << "\n\t -> \t ->*"
             << "\n\t new \t delete"
             << "\n\t new[] \t delete[]";
+    getchar();
 
     std::cout << "\n\n =========================================================";
     std::cout<< "\n Operators that cannot be overloaded"
@@ -208,7 +227,8 @@ int main() {
             << "\n\t sizeof"
             << "\n\t typeid"
             << "\n\t alignof";
-
+    getchar();
+    
     std::cout << "\n\n";
     return 0;
 }
