@@ -1,5 +1,11 @@
 #include <iostream>
 
+/*
+    \author:    Bhushan R Chaudhari
+    \date:      17/09/2026
+    \brief:     program for use of dynamic_cast
+*/
+
 class Base {
 public:
     virtual ~Base() {}
@@ -48,4 +54,25 @@ int main() {
         std::cout << " Function not executed\n\n";
     
     delete pBase;
+
+    std::cout << "\n * dynamic_cast is used for Run-Time Type Identification (RTTI)\n";
+    
+    std::cout << "\n * For RTTI to identify the dynamic type through a base pointer/reference,"; 
+    std::cout << "\n   the base class generally needs to be polymorphic, ie. it has at least one virtual function\n";
+    
+    std::cout << "\n * In this example class Base contains a virtual destructor : virtual ~Base();";
+    std::cout << "\n   the virtual destructor is commonly used because it also makes the class polymorphic";
+    std::cout << "\n   and ensures proper destruction through a base pointer\n";
+
+    std::cout << "\n ===================================================================================== \n";
+
+    std::cout << "\n # RTTI is a C++ mechanism used to determine an object's actual type at runtime.";
+    std::cout << "\n   It is primarily provided through dynamic_cast and typeid. RTTI is useful when";
+    std::cout << "\n   a base-class pointer or reference refers to an object of a derived class. For"; 
+    std::cout << "\n   polymorphic classes, the base class must have at least 1 virtual function for"; 
+    std::cout << "\n   runtime type information to work correctly.\n";
+
+    std::cout << "\n # One important distinction : RTTI and virtual function dispatch are related to";
+    std::cout << "\n   runtime polymorphism but they are not the same thing. Virtual dispatch chooses";
+    std::cout << "\n   which function to execute; RTTI determines what the object's runtime type is.\n\n";
 }
