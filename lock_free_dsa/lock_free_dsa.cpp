@@ -53,7 +53,7 @@ public:
         ));
 
         result = head_pop->data;
-        delete head_pop; // ⚠️ Not safe in real lock-free systems
+ //     delete head_pop; // deleting a this memory is not safe in real lock-free systems
         return true;
     }
 
