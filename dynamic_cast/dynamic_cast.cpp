@@ -3,7 +3,7 @@
 /*
     \author:    Bhushan R Chaudhari
     \date:      17/09/2026
-    \brief:     program for use of dynamic_cast
+    \brief:     program for dynamic_cast as Run-Time Type Identification (RTTI) with its explaination
 */
 
 class Base {
@@ -52,7 +52,6 @@ int main() {
         pDerived2->show();  // this will not execute
     else
         std::cout << " Function not executed\n\n";
-    
     delete pBase;
 
     std::cout << "\n * dynamic_cast is used for Run-Time Type Identification (RTTI)\n";
